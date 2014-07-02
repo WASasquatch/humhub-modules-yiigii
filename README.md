@@ -1,23 +1,10 @@
-HumHub - BreakingNews Module
-============================
+Yii´s Gii Module
+================
 
-Popups a breaking news lightbox on dashboard. The message can be set by all admins
-in markdown syntax language.
+Allows developers to use Yii Frameworks Gii Code Generator inside HumHub.
 
-More informations at: 
+Sourcecode available at: 
 <https://github.com/humhub/humhub-modules-breakingnews>
 
-
-# Changelog
-
-## 0.9.3
-* Added Module Image
-
-## 0.9.2
-* CSS Fixes
-
-## 0.9.0
-* Inital Release
-
-# Manual Installation
-* Put files into /protected/modules/breakingnews 
+More informations about gii: 
+<http://www.yiiframework.com/doc/guide/1.1/en/topics.gii>
