@@ -1,8 +1,10 @@
 <?php
 
-class YiiGiiModule extends HWebModule {
+class YiiGiiModule extends HWebModule
+{
 
-    public function init() {
+    public function init()
+    {
         $this->setImport(array(
             'yiigii.forms.*',
             'yiigii.controllers.*',
@@ -10,14 +12,20 @@ class YiiGiiModule extends HWebModule {
         ));
     }
 
-    public static function onWebApplicationInit($event) {
-        
+    public function getConfigUrl()
+    {
+        return Yii::app()->createUrl('//yiigii/config');
+    }
+
+    public static function onWebApplicationInit($event)
+    {
+
         Yii::app()->setModules(array(
             'gii' => array(
                 'class' => 'system.gii.GiiModule',
                 'password' => HSetting::Get('password', 'yiigii'),
                 // If removed, Gii defaults to localhost only. Edit carefully to taste.
-                'ipFilters' => explode(",", str_replace(" ", "",HSetting::Get('ipFilters', 'yiigii'))),
+                'ipFilters' => explode(",", str_replace(" ", "", HSetting::Get('ipFilters', 'yiigii'))),
                 'generatorPaths' => array(
                     'bootstrap.gii',
                 ),
