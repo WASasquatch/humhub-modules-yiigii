@@ -5,6 +5,6 @@
     "version": "0.9",
     "humhub": {
         "minVersion": "0.5",
-        "maxVersion": "0.7"
+        "maxVersion": "0.9"
     }
 }
