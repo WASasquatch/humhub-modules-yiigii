@@ -2,9 +2,9 @@
     "name": "Yii Gii Integration",
     "description": "Integrates Yii Code Generator for HumHub Developers",
     "keywords": ["yii", "gii", "development"],
-    "version": "0.9.3",
+    "version": "0.9.4",
     "humhub": {
         "minVersion": "0.5",
-        "maxVersion": "0.9"
+        "maxVersion": "0.11"
     }
 }
